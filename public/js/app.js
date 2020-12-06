@@ -7,6 +7,7 @@ const msg=document.querySelector('#dat')
 const m=document.querySelector('#da')
 
 
+
 weatherform.addEventListener('submit' , (e)=>{ e.preventDefault()
 const lo=search.value 
 fetch('http://localhost:3000/weather?search='+ lo).then((response)=>{ response.json().then((data)=>{ if(data.error){message.textContent="oopsie"} else {message.textContent=data.location ; 
